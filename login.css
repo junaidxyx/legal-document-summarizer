@@ -1,0 +1,130 @@
+/* html {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    font-family: Inter, system-ui, -apple-system, sans-serif;
+    font-size: 18px;
+}
+
+h2 {
+    color: white;
+    font-family: Inter, system-ui, -apple-system, sans-serif;
+    font-size: 14px;
+}
+
+.main-container {
+    background-color: rgb(20, 20, 20);
+} */
+
+/* Base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    background-color: #000;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container (the centered login card) */
+.main-container {
+    background-color: rgb(20, 20, 20);
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 12px;
+    padding: 40px;
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Logo + heading */
+.main-container > div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+h2 {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* Labels and Inputs */
+label {
+    display: block;
+    text-align: left;
+    color: rgb(200, 200, 200);
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+input::placeholder {
+    color: rgb(120, 120, 120);
+}
+
+/* Sign in button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+/* "Need an account?" link button */
+.main-container > div:last-child {
+    margin-top: 20px;
+}
+
+.main-container > div:last-child button {
+    background: none;
+    color: rgb(160, 160, 160);
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.main-container > div:last-child button:hover {
+    color: white;
+}
